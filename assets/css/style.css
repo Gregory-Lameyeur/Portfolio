@@ -183,12 +183,24 @@ article {
 }
 
 .icon-box::before {
-  content: "";
+
   position: absolute;
   inset: 1px;
   background: var(--eerie-black-1);
   border-radius: inherit;
   z-index: -1;
+  
+}
+
+#icon-box-linkedin {
+  background-image: url(../images/icon-linkedin.svg);
+}
+
+#icon-box-github {
+  background-image: url(../images/icon-github.svg);
+}
+#icon-box-mail {
+  background-image: url(../images/icon-mail.svg);
 }
 
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
@@ -316,9 +328,11 @@ main {
   gap: 15px;
 }
 
-.avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+
+
+.pdp {
+  
+  height: 12rem;
 }
 
 .info-content .name {
@@ -332,8 +346,8 @@ main {
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
-  font-size: var(--fs-8);
-  font-weight: var(--fw-300);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-500);
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
@@ -400,11 +414,17 @@ main {
   width: calc(100% - 46px);
 }
 
+a{
+  text-decoration: none;
+  color: var(--light-gray-70);
+}
+
 .contact-title {
   color: var(--light-gray-70);
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
+  text-decoration: underline;
 }
 
 .contact-info :is(.contact-link, time, address) {
