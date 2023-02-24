@@ -110,19 +110,19 @@
   box-sizing: border-box;
 }
 
-a { text-decoration: none; }
+
 
 li { list-style: none; }
 
 img, ion-icon, a, button, time, span { display: block; }
 
-button {
+/* button {
   font: inherit;
   background: none;
   border: none;
   text-align: left;
   cursor: pointer;
-}
+} */
 
 input, textarea {
   display: block;
@@ -132,11 +132,11 @@ input, textarea {
 }
 
 ::selection {
-  background: var(--orange-yellow-crayola);
+  background-color: #5FC2BA;
   color: var(--smoky-black);
 }
 
-:focus { outline-color: var(--orange-yellow-crayola); }
+/* :focus { outline-color: var(--orange-yellow-crayola); } */
 
 html { 
   font-family: var(--ff-poppins);
@@ -144,8 +144,18 @@ html {
 
 body { background-color: #0B162C; }
 
+a:hover, a.contact-link:hover {
+  color : #5FC2BA;
+  font-weight: 900;
+}
 
 
+
+.icon-box:hover{
+    /* -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);     */
+}
 
 
 /*-----------------------------------*\
@@ -356,6 +366,12 @@ main {
   border-radius: 8px;
 }
 
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
 .info_more-btn {
   position: absolute;
   top: -15px;
@@ -427,7 +443,15 @@ a{
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
-  text-decoration: underline;
+}
+
+.social-media li{
+  margin : 0 0.7rem
+}
+
+.social-media a:hover {
+  transform: scale(1.15);
+  transition: 0.2s;
 }
 
 .contact-info :is(.contact-link, time, address) {
@@ -520,7 +544,10 @@ a{
  * #service 
  */
 
-.service { margin-bottom: 35px; }
+.service { 
+  margin-bottom: 35px;
+  margin-top: 35px;
+ }
 
 .service-title { margin-bottom: 20px; }
 
@@ -1317,6 +1344,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     height: 48px;
     border-radius: 12px;
     font-size: 18px;
+    background-color: #1C2942;
   }
 
 
