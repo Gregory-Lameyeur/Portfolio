@@ -210,10 +210,31 @@ article {
 #icon-box-github {
   background-image: url(../images/icon-github.svg);
 }
-#icon-box-mail {
-  background-image: url(../images/icon-mail.svg);
+
+
+
+.svg-icon {
+  width: 30px;
+  height: 30px;
 }
 
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #ECF8F6;
+}
+
+.svg-icon circle {
+  stroke: #ECF8F6;
+  stroke-width: 1;
+}
+
+
+.icon-box-contact {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
 
 article { display: none; }
@@ -418,14 +439,14 @@ main {
 .contacts-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 15px;
 }
 
 .contact-item {
   min-width: 100%;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 15px;
 }
 
 .contact-info {
