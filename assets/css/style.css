@@ -584,7 +584,9 @@ a{
   /**
    * #PORTFOLIO, BLOG 
    */
-  .pdp { height: 8rem; }
+  .pdp { 
+    height: 8rem;
+    width: 9rem; }
   .project-img,
   .blog-banner-box { height: auto; }
 
