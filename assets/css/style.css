@@ -579,16 +579,17 @@ a{
  * responsive larger than 450px screen
  */
 
-@media (min-width: 450px) {
+@media (max-width: 900px) {
 
   /**
    * #PORTFOLIO, BLOG 
    */
-
+  .pdp { height: 8rem; }
   .project-img,
   .blog-banner-box { height: auto; }
 
 }
+
 
 
 
